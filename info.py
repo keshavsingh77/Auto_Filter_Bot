@@ -30,7 +30,7 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/f983d857f3c
 FSUB_IMG = (environ.get('FSUB_IMG', 'https://i.ibb.co/cShkPjcZ/x.jpg')).split() 
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6285713858 7045947967').split()]  #Admin Id
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002368981263').split()] #Movie Database Channel Id
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002257290028').split()] #Movie Database Channel Id
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002567856061'))  #Log Channel Id
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002567856061'))  #Streming Log Channel Id
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002393184501'))  #Movie Update Channel Id
@@ -45,8 +45,8 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'SilentXBotz_files')
 
 # If MULTIPLE_DB Is True Then Fill DATABASE_URI2 Value Else You Will Get Error.
-MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False) # Type True For Turn On MULTIPLE DB FUNTION 
-DATABASE_URI2 = environ.get('DATABASE_URI2', "")
+MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "True"), False) # Type True For Turn On MULTIPLE DB FUNTION 
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://bazaarmovies:9pdULpaWpW0TDoCc@cluster0.zlzog.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movierequest707')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/movie_bazaar07')
